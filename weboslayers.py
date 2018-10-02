@@ -53,7 +53,7 @@
 Distribution = "webos"
 
 # Supported MACHINE-s
-Machines = ['raspberrypi3','qemux86']
+Machines = ['raspberrypi3','qemux86','dragonboard-410c']
 
 # github.com/openembedded repositories are read-only mirrors of the authoritative
 # repositories on git.openembedded.org
@@ -81,5 +81,7 @@ webos_layers = [
 ('meta-raspberrypi',          50, 'git://git.yoctoproject.org/meta-raspberrypi',            'branch=morty,commit=2a19226', ''),
 ('meta-webos-raspberrypi',    51, 'git://github.com/webosose/meta-webosose.git',            '', ''),
 
-('meta-webos-ros2',           52, 'git://github.com/webosose/meta-webosose.git',            '', ''),
+('meta-qcom',                 52, 'git://git.yoctoproject.org/meta-qcom',                   'branch=morty',''),
+
+('meta-webos-ros2',           54, 'git://github.com/webosose/meta-webosose.git',            '', ''),
 ]
